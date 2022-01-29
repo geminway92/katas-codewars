@@ -9,6 +9,10 @@ describe('WhoLikeIt.js',() => {
     expect(whoLikeIt(['Peter'])).toBe("Peter likes this");
   });
 
+  test('Si  dos personas le han dado a me gusta debe retornar', () => {
+    expect(whoLikeIt(["Jacob", "Alex"])).toBe("Jacob and Alex like this");
+  });
+
   test('Si tres personas le han dado a me gusta debe retornar', () => {
     expect(whoLikeIt(["Max", "John", "Mark"])).toBe("Max, John and Mark like this");
   });
